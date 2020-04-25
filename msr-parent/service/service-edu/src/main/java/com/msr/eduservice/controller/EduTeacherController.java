@@ -37,7 +37,7 @@ public class EduTeacherController {
      * @return
      */
     @ApiOperation(value = "所有讲师列表")
-    @GetMapping
+    @GetMapping("list")
     public R list(){
 
         // 自定义异常测试
@@ -100,7 +100,7 @@ public class EduTeacherController {
      * @return
      */
     @ApiOperation(value = "新增讲师")
-    @PostMapping
+    @PostMapping("save")
     public R save(
             @ApiParam(name = "teacher", value = "讲师对象", required = true)
             @RequestBody EduTeacher teacher){

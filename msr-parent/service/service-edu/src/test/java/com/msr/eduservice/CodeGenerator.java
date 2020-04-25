@@ -22,7 +22,7 @@ public class CodeGenerator {
         String projectPath = System.getProperty("user.dir");
         System.out.println(projectPath);
         gc.setOutputDir(projectPath + "/src/main/java");
-        gc.setAuthor("msr");
+        gc.setAuthor("Sincere");
         gc.setOpen(false); //生成后是否打开资源管理器
         gc.setFileOverride(false); //重新生成时文件是否覆盖
         /*
@@ -57,7 +57,7 @@ public class CodeGenerator {
 
         // 5、策略配置
         StrategyConfig strategy = new StrategyConfig();
-        strategy.setInclude("edu_teacher");//只生成这张表，注释后生成所有表
+        strategy.setInclude("edu_course","edu_course_description","edu_chapter","edu_video");//只生成这张表，注释后生成所有表
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
 

@@ -13,6 +13,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>service-edu</module>
+        <module>aliyun-oss</module>
+        <module>service-oss</module>
+        <module>excel-easydemo</module>
     </modules>
 
     <dependencies>
